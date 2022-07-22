@@ -25,6 +25,16 @@ Me(Human(), -3581020800L)
 #### Elixir projects
 * [Simple blockchain implementation from *Introducing Blockchain with Lisp*](https://github.com/bmitc/introducing-blockchain-with-elixir). The Racket code was ported to Elixir and made idiomatic to Elixir.
 * [Custom impelementation of the code in *Functional Web Development with Elixir, OTP, and Phoenix](https://github.com/bmitc/functional-web-development-with-elixir). The Elixir code in the book is modernized, documented and typespecced, and is Dialyzer and Credo compliant.
+* An, at present private, Elixir library to allowing interfacing between Elixir and F# using an Elixir `Port`
+  * Allows developer to define messages in Elixir that are then compiled to F# such that:
+    * On the Elixir side, processes send messages to the `GenServer` without knowledge that inside the GenServer, it is marshalling messages back and forth between Elixir and F#
+    * On the F# side, a `MailboxProcessor` receives messages from Elixir, which can then be processed in F#
+    * Messages can be defined as asynchronous or synchronous
+    * The message compiler handles all F# code generation of messages as discriminated unions and also the parsing logic in F#
+    * The message compiler also handles code generation on the Elixir side to send and receive messages from F#
+  * Send an Elixir `Port` is used, crashes in F# (although unlikely) will never reach Elixir or the BEAM VM since the Port runs F# as a separate OS process
+  * Allows one to treat an F# program as if it was any other process or `GenServer` in Elixir
+  * Allows Elixir developers to interface with .NET through F# and also write more robust and performant code in F# similar to how the code would be written in Elixir (functional programming with pattern matching)
 
 #### F# projects
 * [Functional-first implementation of the ray tracer in *The Ray Tracer Challenge*](https://github.com/bmitc/the-ray-tracer-challenge-fsharp)
