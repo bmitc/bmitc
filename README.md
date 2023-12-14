@@ -24,6 +24,8 @@ Me(Human(), -3581020800L)
 
 ### Repository highlights
 
+* [[link](https://github.com/bmitc/the-ray-tracer-challenge-python)] Python implementation of the ray tracer in the book *The Ray Tracer Challenge*. This is in work but is meant to showcase professional Python experience, coding style, and organization.
+
 * [[link](https://github.com/bmitc/the-ray-tracer-challenge-fsharp)] F# implementation of the ray tracer in the book *The Ray Tracer Challenge*
     
     <p align="center"><image width="500" src="https://user-images.githubusercontent.com/65685447/230558538-d1cf0524-dda9-4246-9f05-81e3495b5fe9.png"/></p>
