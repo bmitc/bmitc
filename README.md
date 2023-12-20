@@ -41,6 +41,7 @@ Me(Human(), -3581020800L)
 * [Nand to Tetris / *Elements of Computing Systems* implementations in F#](https://github.com/bmitc/nand2tetris)
   * Includes assembler, virtual machine (in progress), and CPU simulator (in progress) all written in F# in addition to HDL solutions and the beginnings of VHDL implementations of the Hack CPU.
 * [F# annotations for the book *The Little MLer*](https://github.com/bmitc/the-little-fsharper)
+* [Racket implementations for the book *The Little Learner*](https://github.com/bmitc/the-little-learner)
 * [Various scientific F# notebooks](https://github.com/bmitc/fsharp-science-and-math-notebooks)
 * [Simple blockchain implementation in Elixir from *Introducing Blockchain with Lisp*](https://github.com/bmitc/introducing-blockchain-with-elixir)
 * [Full Elixir impelementation of the code in *Functional Web Development with Elixir, OTP, and Phoenix*](https://github.com/bmitc/functional-web-development-with-elixir)
